@@ -1,0 +1,630 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0px;
+    font-family: 'segoe ui';
+  }
+  
+  .nav {
+    height: 125px;
+    width: 100%;
+    background-color: #ffffff;
+    position: relative;
+  }
+  
+  .nav > .nav-header {
+    display: inline;
+  }
+  
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: #fff;
+    padding: 20px 20px 20px 20px;
+  }
+  #logo{
+    position: absolute;
+    width: 315px;
+    height: 105px;
+    font-size: 50x;
+    margin-left: -15px;
+    margin-top: -12px;
+    background-color: white;
+  }
+  
+  .nav > .nav-btn {
+    display: none;
+  }
+  
+  .nav > .nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+  }
+  
+  .nav > .nav-links > a {
+    display: inline-block;
+    padding: 20px 75px 20px 15px;
+    text-decoration: none;
+    color: #484040;
+  }
+  
+  .nav > .nav-links > a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .nav > #nav-check {
+    display: none;
+  }
+  
+   @media (max-width:600px) { 
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #eee;
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: #333;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+    }
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+  }
+  .searchcontainer{
+    background: linear-gradient(135.46deg,#3961d9,#df293a);
+    width: 100%;
+    padding: 10px 0 32px;
+    margin-bottom: 18px;
+    position: relative;
+    box-sizing: border-box;
+    height: 300px;
+  }
+  .head {
+    position: absolute;
+    font-size: 40px;
+    padding: 13px 325px 50px;
+    font-family: 'Times New Roman', serif;
+  }
+  #secondhead{
+    position: absolute;
+    font-size: 20px;
+    padding: 100px 20px 80px 555px;
+  }
+  .search {
+    width: 100%;
+    position: relative;
+    display: flex;
+  }
+  
+  .searchTerm {
+    width: 40%;
+    border: 3px solid white;
+    border-right: none;
+    padding: 25px;
+    height: 35px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9DBFAF;
+    margin-left: 325px;
+    margin-top: 170px;
+  }
+  
+  .searchTerm:focus{
+    color: black;
+    
+  }
+  
+  .searchButton {
+    width: 135px;
+    height: 56px;
+    border: 1px solid #b2bbbd;
+    background:black;
+    text-align: center;
+    color: #f3ecec;
+    border-radius: -1 6px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 170px;
+  }
+  /* thirdrow................................................  */
+  .thirdrow{
+    background-color:white;
+    width: 100%;
+    padding: 10px 0 32px;
+    margin-bottom: 18px;
+    position: relative;
+    box-sizing: border-box;
+    height: 570px;
+    position: absolute;
+    margin-top: -15px;
+    
+
+  }
+  #thirdhead{
+    position: absolute;
+    font-size: 40px;
+    padding: 0px 356px 69px 374px;
+    font-family: 'Times New Roman', serif;
+    
+
+  }
+  #thirdpara{
+    position: absolute;
+    font-size: 20px;
+    padding: 75px 11px 28px 261px;
+    font-family: 'Times New Roman', serif;
+  }
+  #thirdimgone{
+    width: 40%;
+    padding: 57px -17px -10px;
+    margin-bottom: -73px;
+    position: relative;
+    box-sizing: border-box;
+    height: 400px;
+    position: absolute;
+    margin-top: 155px;
+    margin-left: 80px;
+  }
+  #thirdimgtwo{
+    width: 40%;
+    padding: 57px -17px -10px;
+    margin-bottom: -73px;
+    position: relative;
+    box-sizing: border-box;
+    height: 400px;
+    position: absolute;
+    margin-top: 155px;
+    margin-left: 720px;
+  }
+  /* fourthrow.............................  */
+  .fourthrow{
+    background-color: white;
+    width: 100%;
+    padding: 17px 0px 10px;
+    margin-bottom: 18px;
+    position: relative;
+    box-sizing: border-box;
+    height: 530px;
+    position: absolute;
+    margin-top: 555px;
+  }
+  .fourthleftcon{
+    background-color:white;
+    width: 40%;
+    margin-bottom: 18px;
+    position: relative;
+    box-sizing: border-box;
+    height: 390px;
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 80px;
+
+  }
+  #pro{
+    font-family: 'Times New Roman', serif;
+    margin-left: 0px;
+  }
+  #per{
+    position: absolute;
+    margin-top: -50px;
+    margin-left: 115px;
+  }
+  .fourthrigthcon{
+    background-color:white;
+    width: 40%;
+    margin-bottom: 18px;
+    position: relative;
+    box-sizing: border-box;
+    height: 390px;
+    position: absolute;
+    margin-top: 1px;
+    margin-left: 720px;
+
+  }
+  #web{
+    font-family: 'Times New Roman', serif;
+    margin-left: 0px;
+  }
+  #pertwo{
+    position: absolute;
+    margin-top: -50px;
+    margin-left: 135px;
+  }
+  
+  
+  .sub-main{
+    width: 30%;
+    margin:22px;
+    float: left;
+  }
+  
+   
+    
+  
+  
+  .button-two {
+    border-radius: 4px;
+    background-color: #e4dbd5;
+    border: none;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    text-align: center;
+    cursor: pointer;
+    font-size: 17px;
+    margin: 0 0 0 100px;
+  }
+  
+  
+  .button-two span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button-two span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.s;
+  }
+  
+  .button-two:hover span {
+    padding-right: 25px;
+  }
+  
+  .button-two:hover span:after {
+    opacity: 1;
+    right: 0;
+  }  
+  .fifthrow{
+    background-color: white;
+    width: 100%;
+    padding: 17px 0px 10px;
+    margin-bottom: 18px;
+    position: relative;
+    box-sizing: border-box;
+    height: 570px;
+    position: absolute;
+    margin-top: 515px;
+
+  }
+  #women{
+    width: 100%;
+    padding: 57px -17px -10px;
+    margin-bottom: -77px;
+    position: relative;
+    box-sizing: border-box;
+    height: 530px;
+    position: absolute;
+    margin-top: -16px;
+    margin-left: 0px;
+
+  }
+  .imghead{
+    position: absolute;
+    font-size: 40px;
+    padding: 52px 181px 27px 755px;
+    font-family: 'Times New Roman', serif;
+  }
+  #imgpara{
+    position: absolute;
+    font-size: 20px;
+    padding: 176px 28px 12px 757px;
+    
+
+  }
+  .buttonimg{
+    border-radius: 4px;
+    background-color: white;
+    border: none;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    text-align: center;
+    cursor: pointer;
+    font-size: 17px;
+    margin: 316px 156px 34px 910px;
+    font-size: 20px;
+    
+  }
+  .buttonimg span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    
+  }
+  
+  .buttonimg span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 3s;
+    
+  }
+  
+  .buttonimg:hover span {
+    padding-right: 25px;
+    
+    
+  }
+  
+  .buttonimg:hover span:after {
+    opacity: 1;
+    right: 0;
+    
+  }
+  .needhelp{
+    background-color: seashell;
+    width: 100%;
+    margin-bottom: 18px;
+    position: relative;
+    box-sizing: border-box;
+    height: 65px;
+    position: absolute;
+    margin-top: 1620px;
+  }
+  #needlen{
+    position: absolute;
+    font-size: 30px;
+    font-family: 'Times New Roman', serif;
+    margin-top: 12px;
+    margin-left: 251px;
+  }
+  .scone{
+    background-color: #111111;
+    width: 100%;
+    margin-bottom: 18px;
+    position: relative;
+    box-sizing: border-box;
+    height: 474px;
+    position: absolute;
+    margin-top: 1685px;
+  }
+  #firstone{
+    height: 130px;
+    width: 1353px;
+    margin-top: 0px;
+    margin-left: -4px;
+    cursor: pointer;
+
+  }
+  
+  #secondone{
+    height: 200px;
+    width: 1353px;
+    margin-top: 230PX;
+    margin-left: -4px;
+    cursor: pointer;
+  }
+  
+  #about {
+    position: absolute;
+    margin-left: 100px;
+    margin-top: 60px;
+    color: white;
+  }
+  #ps{
+    position: absolute;
+    margin-left: 280px;
+    margin-top: 60px;
+    color: white;
+    
+  }
+  .contact{
+    position: absolute;
+    margin-left: 100px;
+    margin-top: 90px;
+    color: white;
+  }
+  #community{
+    position: absolute;
+    margin-left: 280px;
+    margin-top: 90px;
+    color: white;
+  }
+  #newsroom{
+    position: absolute;
+    margin-left: 100px;
+    margin-top: 120px;
+    color: white;
+  }
+  #ra{
+    position: absolute;
+    margin-left: 280px;
+    margin-top: 120px;
+    color: white;
+  }
+  #legal{
+    position: absolute;
+    margin-left: 100px;
+    margin-top: 150px;
+    color: white;
+  }
+  #resourses{
+    position: absolute;
+    margin-left: 280px;
+    margin-top: 150px;
+    color: white;
+  }
+  
+  #blog{
+    position: absolute;
+    margin-left: 100px;
+    margin-top: 180px;
+    color: white;
+  }
+  #headone{
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 95px;
+    font-size: 20px;
+    font-family: solid;
+    color: white;
+    
+  }
+#headtwo{
+  position: absolute;
+  margin-top: 15px;
+  margin-left: 280px;
+  font-size: 20px;
+  font-family: solid;
+  color: white;
+}
+#headthree{
+  position: absolute;
+  margin-top: 15px;
+  margin-left: 465px;
+  font-size: 20px;
+  font-family: solid;
+  color: white;
+}
+#webmail{
+  position: absolute;
+  margin-left: 465px;
+  margin-top: 60px;
+  color: white;
+}
+#whois{
+  position: absolute;
+  margin-left: 465px;
+  margin-top: 90px;
+  color: white;
+}
+#Product{
+  position: absolute;
+  margin-left: 465px;
+  margin-top: 120px;
+  color: white;
+}
+#redeem{
+  position: absolute;
+  margin-left: 465px;
+  margin-top: 150px;
+  color: white;
+} 
+#business{
+  position: absolute;
+  margin-left: 465px;
+  margin-top: 180px;
+  color: white;
+}
+#headfour{
+  position: absolute;
+  margin-top: 15px;
+  margin-left: 690px;
+  font-size: 20px;
+  font-family: solid;
+  color: white;
+}
+#affiliates{
+  position: absolute;
+  margin-left: 690px;
+  margin-top: 60px;
+  color: white;
+}
+#rp{
+  position: absolute;
+  margin-left: 690px;
+  margin-top: 90px;
+  color: white;
+}
+#gp{
+  position: absolute;
+  margin-left: 690px;
+  margin-top: 120px;
+  color: white;
+
+}
+#headfive{
+  position: absolute;
+  margin-top: 15px;
+  margin-left: 900px;
+  font-size: 20px;
+  font-family: solid;
+  color: white;
+  
+}
+#mp{
+  position: absolute;
+  margin-left: 900px;
+  margin-top: 60px;
+  color: white;
+}
+#billing{
+  position: absolute;
+  margin-left: 900px;
+  margin-top: 90px;
+  color: white;
+}
+#create{
+  position: absolute;
+  margin-left: 900px;
+  margin-top: 120px;
+  color: white;
+}
+#insta{
+  position: absolute;
+  height: 60PX;
+  width: 65PX;
+  margin-top: 45px;
+  margin-left: 1100px;
+  cursor: pointer;
+
+}
+#twitter{
+  position: absolute;
+  height: 60PX;
+  width: 65PX;
+  margin-top: 144px;
+  margin-left: 1100px;
+  cursor: pointer;
+}
+#linkedin{
+  position: absolute;
+  height: 55PX;
+  width: 60PX;
+  margin-top: 105px;
+  margin-left: 1200px;
+  cursor: pointer;
+}
